@@ -1,0 +1,32 @@
+{
+  "name": "payload-cms-collection-archiver",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "backup": "node src/backup.js",
+    "test": "node src/utils/testConnection.js"
+  },
+  "keywords": [
+    "payload-cms",
+    "backup",
+    "cms",
+    "data-export"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luckyJeffy/payload-cms-collection-archiver.git"
+  },
+  "author": "luckyJeffy",
+  "license": "MIT",
+  "description": "A reliable Node.js CLI tool for backing up Payload CMS data and schemas to structured JSON files with multi-environment support, rate limiting, and comprehensive logging.",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.0.0",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^3.3.0",
+    "ora": "^8.2.0",
+    "p-limit": "^6.2.0"
+  }
+}
